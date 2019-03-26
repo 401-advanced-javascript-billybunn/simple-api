@@ -63,11 +63,8 @@ PUT:
 DELETE: 
 * `http delete :3000/products/2`
 
-
-
-
-
-
+## Connect a web server
+![React front-end](https://i.imgur.com/jCFoswR.png)
 
 ### Modules
 #### `modulename.js`
