@@ -34,6 +34,41 @@
 <!-- (All assignments) -->
 * [jsdoc][6]
 
+### HTTP requests
+#### `/categories` GET, POST
+GET: 
+* `http :3000/categories`
+POST: 
+* `echo '{"name":"candy", "display_name":"Sweet Treats", "description":"These taste good, but dont look at the ingredient list."}' | http :3000/categories`
+* `echo '{"name":"vegetables", "display_name":"Super Foods", "description":"Ewwwwww!"}' | http :3000/categories`
+* `echo '{"name":"meat", "display_name":"Dead Animals", "description":"Its the circle of life"}' | http :3000/categories`
+
+#### `/categories/:id/` PUT, DELETE
+PUT: 
+* `echo '{"name":"meat", "display_name":"Deli", "description":"Lets forget about animal cruelty for tonights dinner"}' | http put :3000/categories/3`
+DELETE: 
+* `http delete :3000/categories/3`
+
+#### `/products` GET, POST
+GET:
+* `http :3000/products`
+POST:
+* `echo '{"name":"reeses", "display_name":"Reeses Peanut Butter Cups", "description":"Chocolate cup filled with peanut butter","category":"candy"}' | http :3000/products`
+* `echo '{"name":"snickers", "display_name":"Snickers", "description":"Nougat topped with caramel and peanuts that has been enrobed in milk chocolate","category":"candy"}' | http :3000/products`
+* `echo '{"name":"kale", "display_name":"Gross Green Stuff", "description":"I really dont care how healthy this is for me. Not worth it.","category":"vegetables"}' | http :3000/products`
+
+#### `/products/:id/` PUT, DELETE
+PUT: 
+* `echo '{"name":"snickers", "display_name":"Snickers", "description":"My least favorite candy","category":"candy", "_id":2}' | http put :3000/products/2`
+DELETE: 
+* `http delete :3000/products/2`
+
+
+
+
+
+
+
 ### Modules
 #### `modulename.js`
 ##### Exported Values and Methods
