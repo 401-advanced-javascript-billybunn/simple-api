@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "candy",
+      "display_name": "Sweet Treats",
+      "description": "These taste good, but dont look at the ingredient list.",
+      "_id": 1
+    },
+    {
+      "name": "vegetables",
+      "display_name": "Super Foods",
+      "description": "Ewwwwww!",
+      "_id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "reeses",
+      "display_name": "Reeses Peanut Butter Cups",
+      "description": "Chocolate cup filled with peanut butter",
+      "category": "candy",
+      "_id": 1
+    },
+    {
+      "name": "kale",
+      "display_name": "Gross Green Stuff",
+      "description": "I really dont care how healthy this is for me. Not worth it.",
+      "category": "vegetables",
+      "_id": 3
+    }
+  ]
+}
